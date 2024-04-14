@@ -1,0 +1,72 @@
+// const tinderuser= new Object()      (singleton object)
+const tinder={}             //(non singleton object)
+
+tinder.id="456jcgd"
+tinder.name="jack"
+tinder.isLoggedIn=false
+// console.log(tinderuser );
+
+const regular =
+    {
+        email:"xyz@gmail.com",
+        fullname:
+            {
+                username:
+                    {
+                        firstname:"jack",
+                        lastname:"ryan"
+                    }
+            }
+    }
+ // console.log(regular);
+ // console.log(regular.fullname?.username.firstname);
+
+const obj1={1: "a"  ,2:"b"}
+const obj2={3: "a"  ,4:"b"}
+
+// const obj3=Object.assign({},obj1,obj2)   //{}is optional
+const obj3 ={...obj1,...obj2}   //spreading
+// console.log(obj3)
+
+const users=[
+    {
+        id:1,
+        email:"h@gmail.com",
+    },
+    {
+        id:2,
+        email:"h@gmail.com",
+    }
+]
+users[1].email
+// console.log(tinder)
+// console.log(Object.keys(tinder));
+// console.log(Object.values(tinder));
+// console.log(Object.entries(tinder));
+//**********************************************************
+
+const course =
+    {
+        cousename:"js in hindi",
+        price :"999",
+        courseinstructor:"teerth"
+    }
+// course.courseinstructor
+
+const {courseinstructor : guide} =course
+
+// console.log(courseinstructor);
+
+console.log(guide)
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
+//basic info about api
