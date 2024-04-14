@@ -1,0 +1,37 @@
+//ARRYS
+const arr=[0,1,2,3,4,7,true,"teerth"]
+/*
+array is rresizeable,mixed array(contain various data types)
+*/
+//console.log(arr[6]);
+
+/*
+shallow copy ==change in original value
+deep copy = its a simple copy not changlable
+*/
+
+const myArr=new Array(0,1,2,4,5,8,7);
+//console.log(myArr[2]);
+
+//ARRAY METHODS
+// myArr.push(18)
+// console.log(myArr);
+// myArr.pop() 
+// console.log(myArr) ;
+
+myArr.unshift(100)  //insert at start ,and shift all values
+// console.log(myArr);
+
+// myArr.shift()  
+// console.log(myArr);
+
+// console.log(myArr.includes(7));
+// console.log(myArr.indexOf(5));
+
+const newAr=myArr.join()
+
+console.log(myArr);
+//console.log( typeOf (newAr) );  //it converted into string
+
+ /*slice does not manipulate the original array,
+ wheras splice manipulates or changes the original vaue of that array*/ 
